@@ -7,6 +7,21 @@
   pointer-events: none;
 }
 
+.video-node{
+  stroke-width:1;
+  stroke:#eee;
+}
+.video-node:hover{
+  fill: #f3fafc;
+  stroke:#09f;
+}
+
+.video-node text{
+  fill: #000;
+  stroke-width: 0;
+  stroke:#333;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
