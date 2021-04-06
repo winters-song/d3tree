@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from 'react';
-import TreeView from './component/TreeView'
-import Example from "./component/Example";
+// import TreeView from './component/TreeView'
+import PowerNetMap from "./component/PowerNetMap";
 import './App.css'
 
 const data = {
@@ -25,11 +25,11 @@ function App() {
   useEffect(() => {
     let wrapper = wrapperRef.current
 
-    TreeView.init(wrapper, {
-      data
-    })
+    // TreeView.init(wrapper, {
+    //   data
+    // })
 
-    console.log(Example.getValue())
+    PowerNetMap.init(wrapper)
 
   }, [wrapperRef])
 
